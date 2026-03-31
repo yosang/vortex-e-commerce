@@ -35,7 +35,7 @@ export default function App () {
         <>
         <Container style={{ width: "80%", margin: "auto"}} centered={true}>
         <video
-            src="./src/assets/banner-video.mp4"  // or an external URL
+            src="https://cdn.jumpshare.com/preview/gRWiHgcGHQA_L90A_28rUwl244jROwYmlu9lzxcy8S5VP3AQSPz2U9EupbfElYMQgH8og0a99jYUDe5Mz6b0NR_-BMMe_-VmMnFquZua754171UBOQvLOiAKbaIZ-SvWwpjCRp12Y-gfClUOQokSNG6yjbN-I2pg_cnoHs_AmgI.mp4"  // or an external URL
             autoPlay
             loop       // loops the video continuously
             muted      // must be muted to autoplay on most browsers

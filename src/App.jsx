@@ -17,7 +17,7 @@ function App() {
       <Navbar sticky={true} style={{minHeight: "70px"}}>
 
         <NavLink asListItem={false} tag={Link} to="/">
-          <img style={ { width: "auto", height: "50px", objectFit: "contain"}} src="./src/assets/logo.png" />
+          <img style={ { width: "auto", height: "50px", objectFit: "contain"}} src="https://i.imgur.com/UlFsk3d.png" />
         </NavLink>
           
         <NavItems>
