@@ -12,7 +12,7 @@ export default function App () {
         { 
             image:"https://www.fjellsport.no/assets/blobs/jq4441-1-footwear-photography-side-lateral-center-view-white-1e99ef5095.jpeg?preset=medium",
             title:"Adidas Adizero",
-            description: "Evo Sl Woven M Ftwwht/magold/cblack",
+            description: "Evo Sl Woven",
             price: "1 749",
             discount: "25"
         },
