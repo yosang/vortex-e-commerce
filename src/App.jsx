@@ -20,9 +20,8 @@ function App() {
           <NavLogo tag={Link} to="/" src="https://i.imgur.com/UlFsk3d.png"></NavLogo>
           
           <NavItems>
-            <NavLink tag={Link} to="/" >Home</NavLink>
-            <Divider direction="vertical" />
             <NavLink onClick={() => setLoginOpen(true)}><UserIcon /></NavLink>
+            <Divider direction="vertical" />
             <NavLink onClick={() => setCartOpen(true)}><CartIcon /></NavLink>
           </NavItems>
         </Navbar>
