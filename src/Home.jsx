@@ -33,7 +33,7 @@ export default function App() {
     ]
     return (
         <>
-            <Hero style={{ minHeight: "80vh" }} type='video' src='https://i.imgur.com/5PUkZRJ.mp4'>
+            <Hero style={{ minHeight: "80vh" }} type='image' src='https://i.imgur.com/GaRFfu9.jpeg'>
                 <p>QUALITY SPORTS WEAR</p>
                 <h1>Now is the time...</h1>
                 <h3>to push your limits!</h3>
