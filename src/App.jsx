@@ -1,4 +1,4 @@
-import { Container, Divider, Navbar, NavItems, NavLink, Button, Drawer, Input, Modal, NavLogo, UserIcon, CartIcon } from "@yosang/react-ui"
+import { Container, Divider, Navbar, NavItems, NavLink, Button, Drawer, Input, Modal, NavLogo, UserIcon, CartIcon, MenuIcon } from "@yosang/react-ui"
 import { BrowserRouter, Route, Link, Routes } from "react-router-dom"
 import Home from './Home'
 import Products from './Products'
@@ -9,6 +9,7 @@ import CustomerService from './CustomerService'
 import { useState } from "react"
 
 function App() {
+  const [sidebar, setSidebarOpen] = useState(false)
   const [cartOpen, setCartOpen] = useState(false)
   const [loginOpen, setLoginOpen] = useState(false)
 
@@ -17,8 +18,10 @@ function App() {
       <BrowserRouter>
         <Navbar style={{ minHeight: "70px" }}>
 
+          <NavLink asListItem={false} onClick={() => setSidebarOpen(true)}><MenuIcon /></NavLink>
+
           <NavLogo tag={Link} to="/" src="https://i.imgur.com/UlFsk3d.png"></NavLogo>
-          
+
           <NavItems>
             <NavLink onClick={() => setLoginOpen(true)}><UserIcon /></NavLink>
             <Divider direction="vertical" />
@@ -48,6 +51,14 @@ function App() {
           <p>Products in cart</p>
           <br />
           <Button onClick={() => setCartOpen(false)}>Checkout</Button>
+        </Drawer>
+
+        {/* Sidebar */}
+        <Drawer side="left" isOpen={sidebar} onClose={() => setSidebarOpen(false)} title="VORTEX">
+          <Container centered={false}>
+            <NavLink asListItem={false} tag={Link} to="/products" onClick={() => setSidebarOpen(false)} >Products</NavLink>
+            <NavLink asListItem={false} tag={Link} to="/brands" onClick={() => setSidebarOpen(false)} >Brands</NavLink>
+          </Container>
         </Drawer>
 
         <Modal isOpen={loginOpen} onClose={() => setLoginOpen(false)} title="Login">
