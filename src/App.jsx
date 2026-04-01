@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Link, Routes } from "react-router-dom"
 import Home from './Home'
 import Products from './Products'
 import Brands from './Brands'
+import PageFooter from './PageFooter'
 
 import CustomerService from './CustomerService'
 
@@ -46,6 +47,8 @@ function App() {
           <Route path="/customerservice" element={<CustomerService />} />
           <Route path="/brands" element={<Brands />} />
         </Routes>
+
+        <PageFooter />
 
         <Drawer isOpen={cartOpen} onClose={() => setCartOpen(false)} title="Cart">
           <p>Products in cart</p>
