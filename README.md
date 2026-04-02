@@ -10,9 +10,9 @@ This project is a realistic e-commerce frontend for a sportswear store, designed
 The goal was to create a highly interactive, frontend that highlights the UI library’s features, including Hero sections, ProductCards, flexible Containers, Drawers, Modals, and a sticky Navbar.
 
 # Why I built it
-To test and showcase `@yosang/react-ui` in a e-commerce scenario.
-To practice building interactive, component-driven React applications.
-To create a visually appealing portfolio project with real-world functionality (shopping cart, login modal, product/brand pages).
+- To test and showcase `@yosang/react-ui` in a e-commerce scenario.
+- To practice building interactive, component-driven React applications.
+- To create a visually appealing portfolio project with real-world functionality (shopping cart, login modal, product/brand pages).
 
 # Features
 - Fully responsive design for mobile, tablet, and desktop
